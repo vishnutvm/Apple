@@ -63,6 +63,14 @@ nav .nav_items_flex-wrapp ul a{
     font-size: var(--small_text);
 
 }
+nav .nav_icons{
+    width: 14px;
+    position: relative;
+    top: 4px;
+}
+nav .nav_icons.bag{
+    width: 12px;
+}
 
 
 /* section */
