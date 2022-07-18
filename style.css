@@ -1,0 +1,445 @@
+@font-face {
+    font-family:'Text';
+    src: url(source/fonts/SanFranciscoFont/SanFranciscoText-Light.otf);
+}
+@font-face {
+    font-family:'diplay-text';
+    src: url(source/fonts/SanFranciscoFont/SanFranciscoDisplay-Regular.otf);
+}
+@font-face {
+    font-family:'display-text-italic';
+    src: url(source/fonts/SanFranciscoFont/SanFranciscoText-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: 'text-lite';
+    src: url(source/fonts/SanFranciscoFont/SanFranciscoText-Light.otf);
+}
+/* prest */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theam-color: #d6d6d6;
+    --theam_hover: #f5f5f7;
+    --background-color: #333333;
+    --small_text: 12px;
+    --display_large:56px;
+}
+a{
+    text-decoration: none;
+    color: var(--theam-color);
+
+}
+ul{
+    list-style-type: none;
+}
+
+
+/* nav */
+nav{
+    background-color:var(--background-color);
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    z-index: 99;
+}
+
+nav .nav_items_flex-wrapp{
+    width: 980px;
+    margin: auto;
+}
+
+nav .nav_items_flex-wrapp ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav .nav_items_flex-wrapp ul a{
+    font-family: 'Text';
+    font-size: var(--small_text);
+
+}
+
+
+/* section */
+
+.section_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.section{
+    width: 100%;
+    height: calc(100vh - 132px);
+
+}
+.first_section{
+    background-image:url(source/images/hero_macbookair.png);
+    background-position: center;
+
+    position: relative;
+}
+.first_section .text_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 44%;
+    left: 34%;
+    transform: translate(-50%, -50%)
+}
+.first_section .text_content h1{
+    font-size: var(--display_large);
+    font-family: 'diplay-text';
+}
+.first_section .text_content .learn_an_buy{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 18px;
+}
+.first_section .text_content .learn_an_buy a,span{
+    font-size: 21px;
+    font-family: 'diplay-text';
+    color: #0066cc;
+}
+.first_section .text_content .learn_an_buy a{
+    margin-right: 8px;
+}
+
+
+/* second section */
+.second_section{
+    background-image:url(source/images/hero_iphone13_bg.jpg);
+    background-position: center;
+    position: relative;
+}
+.second_section .second_section_text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.second_section .second_section_text h1{
+    font-size: var(--display_large);
+    font-family: 'diplay-text';
+
+}
+.second_section .second_section_text p{
+    font-size: 28px;
+    font-family: 'diplay-text';
+}
+.second_section .second_section_text .learn_an_buy{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 18px;
+}
+.second_section .second_section_text .learn_an_buy a,span{
+    font-size: 21px;
+    font-family: 'diplay-text';
+    color: #0066cc;
+}
+.second_section .second_section_text .learn_an_buy a{
+    margin-right: 8px;
+}
+
+/* third section */
+.third_section{
+    background-image: url(source/images/back-to-school-bg.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--display_large);
+}
+.third_section .third_section_text{
+    text-align: center;
+}
+.third_section .third_section_text .heading, .head_span{
+    font-family: 'display-text-italic';
+    font-size: var(--display_large);
+}
+.third_section .third_section_text .head_span{
+    color: #ca2166;
+}
+.third_section .third_section_text .sub_text{
+    font-size: 28px;
+    font-family: 'diplay-text';
+    margin-bottom: 20px;
+} 
+.third_section .third_section_text .shop_now a, span{
+    font-size: 21px;
+    font-family: 'diplay-text';
+    color: #0066cc;
+
+}
+.third_section .third_section_text .shop_now a{
+    margin-right: 8px;
+}
+
+
+/* fourth section */
+
+.learn_an_buy{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 18px;
+}
+.learn_an_buy a,span{
+    font-size: 17px;
+    font-family: 'diplay-text';
+    color: #0066cc;
+}
+ .learn_an_buy a{
+    margin-right: 8px;
+}
+
+
+.fourth_section{
+    display: flex;
+    gap: 10px;
+}
+.fourth_section .left_section{
+    width: 50%;
+    background-image: url(source/images/promo_watch.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+
+}
+.fourth_section .left_section p{
+    font-size: 20px;
+    font-family: 'diplay-text';
+    margin-top: 10px;
+
+} 
+
+
+.fourth_section .right_section{
+    width: 50%;
+    background-image: url(source/images/promo_iphone13pro.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.fourth_section .right_section h2{
+    font-size: 40px;
+    font-family: 'diplay-text';
+}
+.fourth_section .right_section p{
+    font-size: 21px;
+    font-family: 'diplay-text';
+    margin-top: 4px;
+}
+
+
+
+
+
+.fifth_section{
+    display: flex;
+    padding: 0 10px;
+    gap: 10px;
+}
+.fifth_section .left_section{
+    width: 50%;
+    background-image: url(source/images/fift_left.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+}
+
+.fifth_section .left_section h2{
+        font-size: 40px;
+        font-family: 'diplay-text';
+        color:#fff;      
+}
+.fifth_section .left_section .learn_an_buy{
+    margin-top: 2px;
+}
+
+
+.fifth_section .right_section{
+    width: 50%;
+    background-image: url(source/images/promo_ipadair_avail_.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+} 
+.fifth_section .right_section p{
+    font-size: 21px;
+    font-family: 'diplay-text';
+    color: #fff;
+}
+
+.sixth_section{
+    display: flex;
+    padding: 0 10px;
+    gap: 10px;
+}
+.sixth_section .left_section{
+    width: 50%;
+    background-image: url(source/images/six-left.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 30px;
+}
+.sixth_section .left_section h2{
+    font-size: 21px;
+    font-family: 'text-lite';
+    margin-top: 4px;
+}
+.sixth_section .left_section a span{
+    font-size: 10px;
+    position: absolute;
+}
+.sixth_section .right_section{
+    width: 50%;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    background-image: url(source/images/six-righ-bg.jpg);  
+    text-align: center;
+    padding-bottom: 30px;
+}
+.sixth_section .right_section .bottom .sub_heading p{
+    font-size: 21px;
+    font-family: 'Text';
+    color: #ffff;
+    margin-top: 15px;
+}
+.sixth_section .right_section .bottom .stream p{
+    font-size: 18px;
+    font-family: 'diplay-text';
+    color: #ffff;
+    margin-top: 15px;
+
+}
+
+/* footer */
+.footer-wrapper{
+    width: 100%;
+    background-color: #f5f5f7;
+}
+footer{
+    width: 980px;
+    margin: auto;
+}
+footer .text_content{
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid #6e6e73;
+
+
+}
+footer .text_content p{
+    color: #6e6e73;
+    font-size: 12px;
+    font-family: 'Text';
+}
+
+
+footer .footer_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    padding-right: 50px;
+
+}
+footer .footer_menu ul li{
+   margin: 7px 0;
+
+}
+footer .footer_menu ul li a{
+    font-family: 'Text';
+    font-size: 13px;
+    color: #6e6e73;
+}
+footer .footer_menu ul li .head{
+    color: #1d1d1f;
+    font-family: 'diplay-text';
+    font-size: 13px;
+}
+.second_ul{
+    margin: 20px 0;
+}
+
+footer .footer_contact{
+    width: 100%;
+    border-bottom: 1px solid #6e6e73;
+    margin-bottom: 10px;
+
+}
+footer .footer_contact p{
+    font-family: 'Text';
+    font-size: 13px;
+    color: #6e6e73;
+    margin-bottom: 10px;
+}
+footer .footer_contact p a{
+    color: #06c;
+}
+
+ 
+footer .footer_credit{
+    display: flex;
+    gap: 25px;
+    position: relative;
+    padding-bottom: 20px;
+}
+footer .footer_credit .credit p{
+    font-family: 'Text';
+    font-size: 13px;
+    color: #6e6e73;
+}
+footer .footer_credit .menu ul{
+    display: flex;
+}
+footer .footer_credit .menu ul li{
+    padding: 0 10px;
+}
+footer .footer_credit .menu ul li a{
+    font-family: 'Text';
+    font-size: 13px;
+    color: #6e6e73;
+}
+
+
+
+footer .footer_credit .menu ul .border{
+    border-right: 1px solid #6e6e73;
+}
+footer .footer_credit .india p{
+    font-family: 'Text';
+    font-size: 13px;
+    color: #6e6e73;
+   position:absolute;
+   right: 0;
+}
