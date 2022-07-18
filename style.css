@@ -63,6 +63,8 @@ nav .nav_items_flex-wrapp ul a{
     font-size: var(--small_text);
 
 }
+
+/* nav icons postion fix */
 nav .nav_icons{
     width: 14px;
     position: relative;
